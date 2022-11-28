@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #2a75bb, #ffcb05);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato";
+  margin: 0;
+}
+
+h1 {
+  letter-spacing: 3px;
+  background-color: #eee;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.pokemon {
+  background-color: #eee;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.front {
+  backface-visibility: hidden;
+}
+.back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  margin-top: -150px;
+}
+.flip {
+  transform: rotateY(180deg);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon .img-container {
+  background-color: rgba(255, 253, 253, 0.938);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+}
+
+.pokemon .img-container img {
+  margin-top: 20px;
+  max-width: 90%;
+}
+
+.pokemon .info {
+  margin-top: 20px;
+}
+
+.pokemon .number {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 5px 10px;
+}
+
+.pokemon .name {
+  margin: 15px 0 7px;
+  letter-spacing: 1px;
+}
+.search {
+  background-color: white;
+  border-radius: 20px;
+  width: 15em;
+  text-align: center;
+}
+
+button {
+  background-color: #2a75bb;
+  color: #ffcb05;
+  border: none;
+  width: 5em;
+  height: 2em;
+  font-size: 1em;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: #65aaeb;
+}

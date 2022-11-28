@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeDex</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <h1>PokeDex</h1>
+    <div id="poke-container" class="poke-container"></div>
+    <div class="search" id="search">
+      <h2 class="search-pokemon">Search Pokemon</h2>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        placeholder="enter pokemon id"
+        min="1"
+      />
+      <br />
+      <br />
+      <button onclick="searchPokemon()">Search</button> <br /><br />
+      <div id="display-pokemon"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
